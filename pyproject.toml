@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "GLU-KERAS"
+version = "0.0.1"
+description = ""
+authors = ["Muhammad Anas Raza"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+keras = ">=3.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
