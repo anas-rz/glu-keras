@@ -10,7 +10,7 @@ pip install glu_keras --upgrade
 
 # Usage
 
-```
+```python
 from glu_keras import SwiGLU
 model = keras.Sequential()
 model.add(keras.layers.Dense(units=10))
