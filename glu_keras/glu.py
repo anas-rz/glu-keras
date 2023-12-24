@@ -6,7 +6,6 @@ class GLU(keras.layers.Layer):
         super(GLU, self).__init__(**kwargs)
         self.bias = bias
         self.dim = dim
-        self.dense = keras.layers.Dense(2, use_bias=bias)
 
     def call(self, x):
         out, gate = ops.split(x, 2, axis=self.dim)
@@ -20,7 +19,6 @@ class Bilinear(keras.layers.Layer):
         super(Bilinear, self).__init__(**kwargs)
         self.bias = bias
         self.dim = dim
-        self.dense = keras.layers.Dense(2, use_bias=bias)
 
     def call(self, x):
         out, gate = ops.split(x, 2, axis=self.dim)
@@ -33,7 +31,6 @@ class ReGLU(keras.layers.Layer):
         super(ReGLU, self).__init__(**kwargs)
         self.bias = bias
         self.dim = dim
-        self.dense = keras.layers.Dense(2, use_bias=bias)
 
     def call(self, x):
         out, gate = ops.split(x, 2, axis=self.dim)
@@ -47,7 +44,6 @@ class GeGLU(keras.layers.Layer):
         super(GeGLU, self).__init__(**kwargs)
         self.bias = bias
         self.dim = dim
-        self.dense = keras.layers.Dense(2, use_bias=bias)
 
     def call(self, x):
         out, gate = ops.split(x, 2, axis=self.dim)
@@ -61,7 +57,6 @@ class SwiGLU(keras.layers.Layer):
         super(SwiGLU, self).__init__(**kwargs)
         self.bias = bias
         self.dim = dim
-        self.dense = keras.layers.Dense(2, use_bias=bias)
 
     def call(self, x):
         out, gate = ops.split(x, 2, axis=self.dim)
@@ -75,7 +70,6 @@ class SeGLU(keras.layers.Layer):
         super(SeGLU, self).__init__(**kwargs)
         self.bias = bias
         self.dim = dim
-        self.dense = keras.layers.Dense(2, use_bias=bias)
 
     def call(self, x):
         out, gate = ops.split(x, 2, axis=self.dim)
