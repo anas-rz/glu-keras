@@ -2,9 +2,8 @@ import keras
 from keras import ops
 
 class GLU(keras.layers.Layer):
-    def __init__(self, bias=True, dim=-1, **kwargs):
+    def __init__(self, dim=-1, **kwargs):
         super(GLU, self).__init__(**kwargs)
-        self.bias = bias
         self.dim = dim
 
     def call(self, x):
@@ -15,9 +14,8 @@ class GLU(keras.layers.Layer):
 
 
 class Bilinear(keras.layers.Layer):
-    def __init__(self, bias=True, dim=-1, **kwargs):
+    def __init__(self, dim=-1, **kwargs):
         super(Bilinear, self).__init__(**kwargs)
-        self.bias = bias
         self.dim = dim
 
     def call(self, x):
@@ -27,9 +25,8 @@ class Bilinear(keras.layers.Layer):
 
 
 class ReGLU(keras.layers.Layer):
-    def __init__(self, bias=True, dim=-1, **kwargs):
+    def __init__(self, dim=-1, **kwargs):
         super(ReGLU, self).__init__(**kwargs)
-        self.bias = bias
         self.dim = dim
 
     def call(self, x):
@@ -40,9 +37,8 @@ class ReGLU(keras.layers.Layer):
 
 
 class GeGLU(keras.layers.Layer):
-    def __init__(self, bias=True, dim=-1, **kwargs):
+    def __init__(self, dim=-1, **kwargs):
         super(GeGLU, self).__init__(**kwargs)
-        self.bias = bias
         self.dim = dim
 
     def call(self, x):
@@ -53,9 +49,8 @@ class GeGLU(keras.layers.Layer):
 
 
 class SwiGLU(keras.layers.Layer):
-    def __init__(self, bias=True, dim=-1, **kwargs):
+    def __init__(self, dim=-1, **kwargs):
         super(SwiGLU, self).__init__(**kwargs)
-        self.bias = bias
         self.dim = dim
 
     def call(self, x):
@@ -66,9 +61,8 @@ class SwiGLU(keras.layers.Layer):
 
 
 class SeGLU(keras.layers.Layer):
-    def __init__(self, bias=True, dim=-1, **kwargs):
+    def __init__(self, dim=-1, **kwargs):
         super(SeGLU, self).__init__(**kwargs)
-        self.bias = bias
         self.dim = dim
 
     def call(self, x):
