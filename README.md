@@ -11,7 +11,9 @@ pip install glu_keras --upgrade
 # Usage
 
 ```python
+import keras
 from glu_keras import SwiGLU
+
 model = keras.Sequential()
 model.add(keras.layers.Dense(units=10))
 model.add(SwiGLU(bias = False, dim=-1, name='swiglu'))
